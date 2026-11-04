@@ -1,0 +1,30 @@
+---
+description: Estilos CSS3 embutidos da página HarmBridge
+globs: site.rev01.html
+alwaysApply: false
+---
+# CSS3
+
+## Objetivo
+Manter identidade visual consistente, responsiva e legível sem introduzir dependências.
+
+## Contexto
+O CSS3 está no `<style>` de `site.rev01.html`; paleta, breakpoints e comportamento visual estão documentados em `docs/readme.md`.
+
+## Regras em tópicos
+- Reutilize variáveis de `:root` para cor, foco, fundo, raio, sombra e tipografia.
+- Siga as classes existentes em inglês, como `.content-section` e `.story-card`.
+- Preserve o layout responsivo e valide os breakpoints existentes em `760px` e `520px`.
+- Mantenha foco visível, contraste, estados de interação e suporte a movimento reduzido.
+- Não use estilos inline, frameworks ou largura fixa que provoque rolagem horizontal.
+
+## Exemplo concreto
+Em `site.rev01.html`: `--navy: #0a1f44;` e `--teal: #40e0d0;` estão definidos em `:root`.
+
+## Erros a evitar
+- Duplicar cores existentes com novos valores sem necessidade.
+- Renomear classes que também são usadas pelo HTML ou JavaScript.
+- Remover o estilo de alto contraste ou os ajustes responsivos.
+
+## Quando perguntar
+Pergunte antes de alterar a paleta, os breakpoints ou a estrutura visual das seções.
