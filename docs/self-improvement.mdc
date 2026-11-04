@@ -1,0 +1,29 @@
+---
+description: Melhoria contínua das regras do projeto mediante confirmação
+alwaysApply: true
+---
+# Melhoria contínua
+
+## Objetivo
+Corrigir regras quando padrões recorrentes mostrarem que as instruções já não refletem o projeto.
+
+## Contexto
+As regras ficam em `docs/`. Consulte `docs/readme.md` e os arquivos reais antes de sugerir alterações.
+
+## Regras em tópicos
+- Considere atualizar uma regra quando o mesmo padrão aparecer em três ou mais arquivos ou o mesmo erro voltar.
+- Verifique primeiro se a orientação atual está desatualizada; não transforme um caso isolado em regra geral.
+- Proponha uma alteração pequena e sincronizada em todas as cópias aplicáveis.
+- Mostre o diff proposto ao usuário e espere confirmação explícita antes de gravar.
+- Após a aprovação, valide escopo, frontmatter e limite de linhas.
+
+## Exemplo concreto
+O HTML real usa `aria-labelledby`: `<section class="content-section" id="historias-reais" aria-labelledby="titulo-historias">`. Se o mesmo padrão precisar ser corrigido em três ou mais arquivos, proponha uma atualização da regra de HTML.
+
+## Erros a evitar
+- Editar regras automaticamente sem apresentar diff e obter confirmação.
+- Generalizar uma ocorrência ou duplicar instruções existentes.
+- Alterar regras sem atualizar o README quando a organização mudar.
+
+## Quando perguntar
+Peça confirmação depois de apresentar o diff; se não houver evidência de recorrência, pergunte antes de sugerir nova regra.
