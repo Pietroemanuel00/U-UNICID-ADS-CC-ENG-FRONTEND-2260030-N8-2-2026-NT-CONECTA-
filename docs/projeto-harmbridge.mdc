@@ -1,0 +1,29 @@
+---
+description: Visão permanente e limites do projeto HarmBridge
+alwaysApply: true
+---
+# Projeto HarmBridge
+
+## Objetivo
+Manter decisões de implementação alinhadas à visão e à stack documentadas em `docs/readme.md`.
+
+## Contexto
+O HarmBridge é um site demonstrativo de acessibilidade e inclusão. Leia `docs/readme.md` antes de alterar páginas, conteúdo, assets ou funcionalidades.
+
+## Regras em tópicos
+- Stack: HTML5, CSS3 e JavaScript nativos, sem frameworks.
+- A única página é `site.rev01.html`; estilos e scripts ficam embutidos nela.
+- A página está em português do Brasil. Mantenha `lang="pt-BR"` e o conteúdo em português.
+- Consulte no README a lista de seções, assets e limitações dos recursos demonstrativos.
+- Não invente páginas, dependências, backend, autenticação, oportunidades ou fatos.
+
+## Exemplo concreto
+Em `site.rev01.html`, o título identifica o produto: `<title>HarmBridge | Acessibilidade e inclusão</title>`.
+
+## Erros a evitar
+- Presumir `public/`, `index.html`, CSS separado ou infraestrutura de servidor.
+- Reintroduzir marca, textos ou requisitos de outro projeto.
+- Descrever protótipos locais como serviços de produção.
+
+## Quando perguntar
+Pergunte antes de ampliar a stack, criar páginas ou serviços, ou mudar a visão e o público descritos em `docs/readme.md`.
