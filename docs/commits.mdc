@@ -1,0 +1,28 @@
+---
+description: Convenção pontual para mensagens de commit do HarmBridge
+alwaysApply: false
+---
+# Commits
+
+## Objetivo
+Manter mensagens de commit curtas e informativas quando o usuário solicitar um commit.
+
+## Contexto
+O repositório não documenta um padrão de commits existente. Esta sugestão deve ser usada apenas quando commits forem solicitados.
+
+## Regras em tópicos
+- Escreva a mensagem em português e descreva a mudança principal.
+- Prefira o formato `<tipo>: <resumo>` com tipo curto, como `docs`, `feat`, `fix` ou `style`.
+- Não inclua credenciais, dados pessoais ou alterações não relacionadas.
+- Não crie nem finalize commits sem pedido explícito do usuário.
+
+## Exemplo concreto
+Ainda não há mensagem de commit real no repositório; proposta para convenção a ser criada: `docs: atualizar regras do HarmBridge`.
+
+## Erros a evitar
+- Tratar a proposta como convenção histórica já adotada.
+- Mensagem vaga, extensa ou com várias mudanças desconexas.
+- Commit automático ou inclusão de segredos.
+
+## Quando perguntar
+Pergunte antes de escolher o escopo do commit ou quando a alteração incluir mudanças que não pertencem ao mesmo objetivo.
