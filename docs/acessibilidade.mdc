@@ -1,0 +1,30 @@
+---
+description: Acessibilidade da interface HarmBridge
+globs: site.rev01.html
+alwaysApply: false
+---
+# Acessibilidade
+
+## Objetivo
+Garantir navegação, leitura e interação acessíveis em todas as seções da interface.
+
+## Contexto
+O produto é um site de inclusão em português do Brasil. HTML, estilos e scripts estão em `site.rev01.html`; a visão funcional está em `docs/readme.md`.
+
+## Regras em tópicos
+- Preserve landmarks semânticos, ordem de títulos, link para pular ao conteúdo e navegação por teclado.
+- Use `alt` descritivo em imagens informativas; descreva a finalidade visual sem presumir identidade além do contexto.
+- Mantenha foco visível, contraste, alvos de interação confortáveis e rótulos explícitos.
+- Anuncie mensagens dinâmicas com `aria-live` e estados de seleção com atributos apropriados.
+- Preserve opções de fonte/tema, movimento reduzido, mapa e widget VLibras.
+
+## Exemplo concreto
+Em `site.rev01.html`: `<img src="./docs/foto-daniel-dias.jpg" alt="Daniel Dias sorrindo com uma medalha paralímpica">`.
+
+## Erros a evitar
+- Depender apenas de cor, ícone ou hover para comunicar instruções ou estados.
+- Usar controles sem nome acessível ou suprimir contorno de foco.
+- Afirmar que VLibras substitui texto alternativo ou outros recursos.
+
+## Quando perguntar
+Pergunte se a mudança afetar recursos assistivos, conteúdo sensível sobre deficiência ou uma interação sem alternativa acessível evidente.
