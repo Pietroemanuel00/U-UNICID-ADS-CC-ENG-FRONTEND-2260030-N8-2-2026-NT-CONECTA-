@@ -25,7 +25,7 @@ Site demonstrativo, em português do Brasil, sobre acessibilidade e inclusão de
 
 - Controles de fonte e tema guardam preferências no navegador.
 - A publicação de vagas usa armazenamento local de sessão e login demonstrativo; não publica nem autentica usuários em um servidor.
-- O formulário de opinião abre um rascunho endereçado a `harmbridge@gmail.com`; o visitante precisa enviar pelo aplicativo de e-mail.
+- O formulário de opinião armazena o conteúdo enviado em local storage do navegador.
 - Anúncios de emprego são externos e podem expirar. Confirmar detalhes no anúncio original.
 
 ## Regras de desenvolvimento
