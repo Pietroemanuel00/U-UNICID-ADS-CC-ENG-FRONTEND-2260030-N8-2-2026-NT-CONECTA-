@@ -1,0 +1,31 @@
+---
+description: Estrutura HTML5 da página HarmBridge
+globs: site.rev01.html
+alwaysApply: false
+---
+# HTML5
+
+## Objetivo
+Preservar estrutura semântica, conteúdo e navegação acessível da página única.
+
+## Contexto
+`site.rev01.html` contém todo o HTML do site. A ordem das seções e seus limites estão em `docs/readme.md`.
+
+## Regras em tópicos
+- Mantenha `lang="pt-BR"`, UTF-8, viewport e um único `h1`.
+- Use `header`, `nav`, `main`, `section` e `footer` para os papéis correspondentes.
+- Dê a cada seção um título hierárquico e `aria-labelledby` com ID único.
+- Mantenha menu, destinos dos links, ordem das seções e mapa no fim do conteúdo principal sincronizados.
+- Use textos alternativos úteis, rótulos ligados aos campos e `title` em iframes.
+- Preserve os scripts e marcadores do VLibras existentes.
+
+## Exemplo concreto
+Em `site.rev01.html`: `<section class="content-section" id="impacto" aria-labelledby="titulo-impacto">`.
+
+## Erros a evitar
+- Criar uma segunda página ou supor `index.html` sem pedido.
+- Usar div no lugar de regiões semânticas ou repetir IDs.
+- Remover mapa, VLibras ou links correspondentes da navegação.
+
+## Quando perguntar
+Pergunte antes de mudar ordem, conteúdo de histórias, destinos externos ou estrutura das páginas previstas no README.

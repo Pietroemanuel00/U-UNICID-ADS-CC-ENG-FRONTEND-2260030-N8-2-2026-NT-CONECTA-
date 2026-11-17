@@ -1,0 +1,30 @@
+---
+description: JavaScript nativo embutido da página HarmBridge
+globs: site.rev01.html
+alwaysApply: false
+---
+# JavaScript
+
+## Objetivo
+Implementar interações pequenas, previsíveis e compatíveis com o HTML e a acessibilidade existentes.
+
+## Contexto
+O JavaScript está no `<script>` de `site.rev01.html`; não há pacote, framework ou backend. Os limites das demonstrações estão em `docs/readme.md`.
+
+## Regras em tópicos
+- Use JavaScript nativo e associe eventos a elementos e IDs já presentes.
+- Valide entradas e apresente o resultado em linguagem clara, usando as regiões de status existentes.
+- Construa conteúdo dinâmico com APIs DOM e `textContent` para valores fornecidos pelo usuário.
+- Preserve estados semânticos, navegação por teclado e controles de fonte e tema.
+- Seja explícito sobre erros; não converta falhas em sucesso silencioso.
+
+## Exemplo concreto
+Em `site.rev01.html`, `button.setAttribute("aria-pressed", String(button.dataset.theme === validTheme));` atualiza o estado acessível do seletor de tema.
+
+## Erros a evitar
+- Tratar `sessionStorage` como autenticação ou persistência em servidor.
+- Usar `innerHTML` para interpolar texto não confiável.
+- Remover ou substituir a inicialização do VLibras.
+
+## Quando perguntar
+Pergunte antes de adicionar dependência, serviço externo, coleta de dados ou persistência além do escopo atual.

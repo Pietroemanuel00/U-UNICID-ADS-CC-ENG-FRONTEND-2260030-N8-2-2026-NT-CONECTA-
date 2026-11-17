@@ -1,0 +1,30 @@
+---
+description: Convenções para organizar regras do projeto HarmBridge
+alwaysApply: true
+---
+# Regras de agentes
+
+## Objetivo
+Manter as regras do projeto pequenas, específicas, organizadas e coerentes com a documentação.
+
+## Contexto
+Todas as regras documentadas ficam em `docs/*.mdc`. Consulte `docs/readme.md` para a organização e o escopo do projeto.
+
+## Regras em tópicos
+- Separe uma preocupação por arquivo; use nomes em kebab-case e menos de 80 linhas.
+- Toda regra contém, nesta ordem: objetivo, contexto, regras em tópicos, exemplo concreto, erros a evitar e quando perguntar.
+- Use `alwaysApply: true` somente para visão do projeto, esta regra e melhoria contínua.
+- Regras de HTML5, CSS3, JavaScript e acessibilidade devem identificar o escopo de `site.rev01.html`.
+- Mantenha exemplos copiados de arquivos reais do repositório.
+- Regras em `docs/` são documentação e precisam ser consultadas/anexadas manualmente pelo editor.
+
+## Exemplo concreto
+`docs/html5.mdc` aplica-se a `site.rev01.html`, a única página do projeto.
+
+## Erros a evitar
+- Duplicar regras em `.cursor/` ou `.github/instructions/`.
+- Misturar assuntos, omitir seções obrigatórias ou exceder 79 linhas.
+- Usar exemplos de outro projeto ou tratar regras em `docs/` como carregadas automaticamente.
+
+## Quando perguntar
+Pergunte se faltar stack, páginas, idioma ou escopo, ou se houver dúvida sobre uma mudança estrutural nas regras.
